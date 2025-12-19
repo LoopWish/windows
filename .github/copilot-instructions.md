@@ -2,6 +2,15 @@
 
 This repository contains the Loopwish Windows client.
 
+## Organization-wide standards (Loopwish)
+
+- Keep PRs small and reviewable; avoid drive-by refactors.
+- Do not commit secrets (API keys, tokens, credentials) or `.env` files.
+- Prefer secure-by-default changes; avoid logging sensitive data.
+- Update docs and tests when behavior changes.
+- Keep CI green and run the repo’s validation commands before opening a PR.
+- Follow the existing code style and architecture; copy patterns already used in the repo.
+
 ## Stack
 
 - .NET 8
