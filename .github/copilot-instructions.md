@@ -39,6 +39,22 @@ dotnet build -c Release
 dotnet test -c Release
 ```
 
+## Git & GitHub procedure
+
+- `main` is protected: create a feature branch, push, and open a PR.
+- If updating shared vendored assets:
+	- Update `.loopwish/shared.ref` to the desired shared tag (example: `v0.1.1`).
+	- Ensure `vendor/shared/...` matches `shared@<tag>` exactly.
+	- Update `scripts/verify_shared_vendor.ps1` if new files are added to the vendoring contract.
+	- Run `powershell -ExecutionPolicy Bypass -File scripts/verify_shared_vendor.ps1` to validate vendored files match the pinned tag.
+- Prefer merging shared changes/tag first, then updating this repo to pin/vendor that tag.
+- After merge, clean up local branches safely:
+
+```bash
+git fetch --prune
+git branch --merged origin/main
+```
+
 ## Safety
 
 - Never commit secrets or credentials.
