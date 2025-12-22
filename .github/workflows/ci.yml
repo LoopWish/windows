@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Verify vendored shared artifacts (warn)
+        run: pwsh .\scripts\verify_shared_vendor.ps1
+
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
