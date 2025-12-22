@@ -1,11 +1,14 @@
 <Window x:Class="Loopwish.App.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Loopwish" Height="320" Width="520">
+        Title="Loopwish" Height="320" Width="520"
+        Background="{DynamicResource Loopwish.Brush.Surface.Canvas}">
     <Grid>
         <StackPanel Margin="24" VerticalAlignment="Center">
-            <TextBlock Text="Loopwish" FontSize="28" FontWeight="SemiBold" />
-            <TextBlock Text="Ønsk. Del. Få. Sammen." Margin="0,10,0,0" FontSize="16" Opacity="0.85" />
+            <TextBlock Text="Loopwish" FontSize="28" FontWeight="SemiBold"
+                       Foreground="{DynamicResource Loopwish.Brush.Text.Primary}" />
+            <TextBlock Text="Ønsk. Del. Få. Sammen." Margin="0,10,0,0" FontSize="16" Opacity="0.85"
+                       Foreground="{DynamicResource Loopwish.Brush.Text.Secondary}" />
         </StackPanel>
     </Grid>
 </Window>
