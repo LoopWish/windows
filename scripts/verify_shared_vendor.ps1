@@ -49,7 +49,7 @@ foreach ($Rel in $Files) {
         $LocalHash = (Get-FileHash $LocalPath -Algorithm SHA256).Hash
         $RemoteHash = (Get-FileHash $Temp.FullName -Algorithm SHA256).Hash
         if ($LocalHash -ne $RemoteHash) {
-            Warn "Vendored file differs from shared@$Tag: vendor/shared/$Rel"
+            Warn "Vendored file differs from shared@${Tag}: vendor/shared/$Rel"
         }
     } finally {
         Remove-Item $Temp.FullName -ErrorAction SilentlyContinue
