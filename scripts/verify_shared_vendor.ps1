@@ -26,7 +26,9 @@ $BaseUrl = "https://raw.githubusercontent.com/loopwish/shared/$Tag"
 $Files = @(
     'design-tokens/tokens.json',
     'assets/logos/loopwish-logo.svg',
-    'assets/logos/loopwish-banner.svg'
+    'assets/logos/loopwish-banner.svg',
+    'assets/logos/loopwish-logo.png',
+    'assets/logos/loopwish-banner.png'
 )
 
 foreach ($Rel in $Files) {

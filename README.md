@@ -1,6 +1,6 @@
 # Loopwish · Windows
 
-![Loopwish banner](https://raw.githubusercontent.com/loopwish/shared/main/assets/logos/loopwish-banner.svg)
+![Loopwish banner](https://raw.githubusercontent.com/loopwish/shared/main/assets/logos/loopwish-banner.png)
 
 Loopwish er en ønskeliste-app som lar deg dele ønsker med familie og venner. Ønsk. Del. Få. Sammen.
 
